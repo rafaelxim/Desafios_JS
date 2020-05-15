@@ -1,14 +1,6 @@
-console.log('\n\n\n\n\n\n\n\n\nTESTES:');
+import { assertEquals } from '../tests.js'
 
-const assertEquals = (y, x) => {
-  
-  if(y === x){
-    console.log('%c Teste Passou! ', 'background: #06623b; color: #fff');
-  }
-  else{
-    console.log('%c Teste não passou ', 'background: #c70039; color: #fff');
-  }
-}
+console.log('\n\n\nTESTES:');
 
 const f100 = redundant("apple")
 const f102 = redundant("pear")

@@ -1,17 +1,6 @@
+import { assertEquals } from '../tests.js'
+
 console.log('\n\n\n\n\n\n\n\n\nTESTES:');
-
-const assertEquals = (y, x) => {
-  
-  if(y === x){
-    console.log('%c Teste Passou! ', 'background: #06623b; color: #fff');    
-  }
-  else{
-    console.log('%c Teste não passou ', 'background: #c70039; color: #fff');
-    console.log(`Esperado: ${x}`);
-    console.log(`Retornado: ${y}`);
-  }
-}
-
 
 class IceCream {
 	constructor(sabor, numBolas) {
@@ -20,16 +9,16 @@ class IceCream {
 	}
 }
 
-ice1 = new IceCream("Nutella", 13)
-ice2 = new IceCream("Baunilha", 0)
-ice3 = new IceCream("Morango", 7)
-ice4 = new IceCream("Creme", 18)
-ice5 = new IceCream("Chocolate", 3)
-ice6 = new IceCream("Nutella", 23)
-ice7 = new IceCream("Morango", 0)
-ice8 = new IceCream("Creme", 34)
-ice9 = new IceCream("Creme", 81)
-ice10 = new IceCream("Baunilha", 12)
+const ice1 = new IceCream("Nutella", 13)
+const ice2 = new IceCream("Baunilha", 0)
+const ice3 = new IceCream("Morango", 7)
+const ice4 = new IceCream("Creme", 18)
+const ice5 = new IceCream("Chocolate", 3)
+const ice6 = new IceCream("Nutella", 23)
+const ice7 = new IceCream("Morango", 0)
+const ice8 = new IceCream("Creme", 34)
+const ice9 = new IceCream("Creme", 81)
+const ice10 = new IceCream("Baunilha", 12)
 
 assertEquals(sweetestIcecream([ice1, ice2, ice3, ice4, ice5]), 23)
 assertEquals(sweetestIcecream([ice7, ice10, ice1, ice6, ice8, ice10, ice2, ice2]), 34)
