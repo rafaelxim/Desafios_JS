@@ -7,8 +7,8 @@ export const assertEquals = (y, x) => {
     }
     else{
       console.log('%c Teste não passou ', 'background: #c70039; color: #fff');
-      console.log(`Resultado obtido: ${x}` )
-      console.log(`Resultado esperado: ${y}` )
+      console.log(`Resultado obtido: ${y}` )
+      console.log(`Resultado esperado: ${x}` )
     }
   }
 
@@ -21,7 +21,7 @@ export const assertEquals = (y, x) => {
     }
     else{
       console.log('%c Teste não passou ', 'background: #c70039; color: #fff');
-      console.log(`Resultado obtido: ${x}` )
-      console.log(`Resultado esperado: ${y}` )
+      console.log(`Resultado obtido: ${y}` )
+      console.log(`Resultado esperado: ${x}` )
     }
   }
